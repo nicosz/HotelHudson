@@ -51,7 +51,7 @@ nav {
 .main-contenedor {
     display: flex;
     flex-direction: row;
-    background-image: url(../imagenes/ice-203053598-67508024_3XL-811259.jpg);
+    background-image: url(../imagenes/AnyConv.com__ice-203053598-67508024_3XL-811259.webp);
     background-size: contain;
     width: 100%;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ nav {
 }
 
 .pileta-container {
-    background-image: url(../imagenes/pileta.jpg);
+    background-image: url(../imagenes/AnyConv.com__pileta.webp);
     background-attachment: fixed;
     background-size: cover;
     height: 30rem;
