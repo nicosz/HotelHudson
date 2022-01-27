@@ -155,10 +155,11 @@ nav {
     border: 7px solid #fff;
     box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.52);
     margin-top: 1rem;
-    transition:background-color 0.5s ease;
-    
+    transition: background-color 0.5s ease;
+
 }
-.circulo:hover{
+
+.circulo:hover {
     background-color: orange;
 }
 
@@ -283,4 +284,7 @@ footer div {
 .img-entrada img {
     width: 100%;
     padding-top: 4rem;
+}
+.form-boostraps{
+    width: 50%;
 }
