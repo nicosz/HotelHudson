@@ -20,13 +20,11 @@ section {
 
 nav {
     background-color: rgb(238, 235, 235);
-    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
     position: absolute;
-    z-index: 6000;
 }
 
 .logo {
@@ -36,21 +34,15 @@ nav {
     margin-bottom: 10px;
 }
 
-.list-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    margin-right: 2rem;
-    list-style: none;
-}
-
 .nav-link {
     color: black;
     text-decoration: none;
 }
-.carrusel{
+
+.carrusel {
     position: relative;
 }
+
 .reservation {
     display: flex;
     flex-direction: column;
@@ -59,7 +51,8 @@ nav {
     background-color: rgba(255, 255, 255, 0.863);
     padding: 1rem;
     margin-left: 7rem;
-    margin: top 3rem;;
+    margin: top 3rem;
+    ;
     top: 150px;
     z-index: 5000;
 }
@@ -249,19 +242,11 @@ footer div {
     margin-top: 3rem;
 }
 
-.grid {
-    display: grid;
-    grid-template-areas:
-        "grid-video"
-        "grid-img"
-    ;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 100% auto;
-}
 .img-entrada img {
     width: 100%;
     padding-top: 4rem;
 }
-.form-boostraps{
+
+.form-boostraps {
     width: 50%;
 }
