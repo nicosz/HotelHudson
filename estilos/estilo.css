@@ -25,7 +25,8 @@ nav {
     display: flex;
     justify-content: space-between;
     font-size: 25px;
-
+    position: absolute;
+    z-index: 6000;
 }
 
 .logo {
@@ -47,26 +48,20 @@ nav {
     color: black;
     text-decoration: none;
 }
-
-.main-contenedor {
-    display: flex;
-    flex-direction: row;
-    background-image: url(../imagenes/AnyConv.com__ice-203053598-67508024_3XL-811259.webp);
-    background-size: contain;
-    width: 100%;
-    background-repeat: no-repeat;
-    height: 60rem;
+.carrusel{
+    position: relative;
 }
-
 .reservation {
     display: flex;
     flex-direction: column;
     font-size: 30px;
+    position: absolute;
     background-color: rgba(255, 255, 255, 0.863);
-    height: 250px;
     padding: 1rem;
     margin-left: 7rem;
-    margin-top: 3rem;
+    margin: top 3rem;;
+    top: 150px;
+    z-index: 5000;
 }
 
 .reservation img {
@@ -79,19 +74,19 @@ nav {
     margin-top: 1rem;
 }
 
-.calendar {
-    margin-top: 1rem;
-    padding-top: 3px;
-}
-
 .calendar select {
     height: 25px;
     font-size: 18px;
 }
 
 .calendar button {
-    height: 26px;
-    font-size: 19px;
+    border: solid 0.5px;
+    border-radius: 5px;
+    height: 25px;
+    font-size: 17px;
+    border-color: #595a5a;
+    background-color: white;
+    padding: 2px;
 }
 
 .foto-hotel {
@@ -111,7 +106,6 @@ nav {
 .servicios {
     display: flex;
     flex-direction: row;
-    list-style: none;
     margin-top: 2rem;
 }
 
@@ -264,23 +258,6 @@ footer div {
     grid-template-rows: 50% 50%;
     grid-template-columns: 100% auto;
 }
-
-.grid-video {
-    grid-area: grid-video;
-
-}
-
-.grid-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    grid-area: grid-img;
-}
-
-.grid-img img {
-    width: 33%;
-}
-
 .img-entrada img {
     width: 100%;
     padding-top: 4rem;
