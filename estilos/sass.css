@@ -1,6 +1,3 @@
-/*selector{
-propiedad:valor;
-}*/
 * {
   padding: 0px;
   margin: 0px;
@@ -9,7 +6,6 @@ propiedad:valor;
           box-sizing: border-box;
 }
 
-/* INDEX*/
 body {
   background-color: white;
 }
@@ -19,7 +15,7 @@ section {
 }
 
 nav {
-  background-color: #ec2727;
+  background-color: #eeebeb;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,19 +27,28 @@ nav {
   position: absolute;
 }
 
-nav .nav-link {
-  color: black;
-  text-decoration: none;
-}
-
-nav .nav-link .logo {
+nav .logo {
   height: 70px;
   margin-top: 10px;
   margin-left: 3rem;
   margin-bottom: 10px;
 }
 
-nav li {
+nav .nav-link {
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #eeebeb;
+  display: -ms-grid;
+  display: grid;
+  padding: 2rem 5rem 2rem 5rem;
+  font-size: 20px;
+      grid-template-areas: "footer-logo" "metodos-pago" "redes-sociales"  "mapa";
+}
+
+footer footer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +59,82 @@ nav li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 40px;
+  width: auto;
+  margin-top: 2rem;
+}
+
+footer .footer-logo {
+  height: 7rem;
+}
+
+footer .metodos-pago {
+  padding-bottom: 4rem;
+}
+
+footer .redes-sociales {
+  padding-bottom: 3.5rem;
+}
+
+footer ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0.5rem;
+  padding-left: 0;
+}
+
+footer .logo-insta {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+footer .logo-whatsapp {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+footer .logo-faceboock {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+footer .info-hotel {
+  width: 22rem;
+}
+
+footer .mapa {
+  height: 10rem;
+  width: 15rem;
+}
+
+@media (min-width: 768px) {
+  footer {
+    background-color: #eeebeb;
+    display: -ms-grid;
+    display: grid;
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 20px;
+        grid-template-areas: "footer-logo metodos-pago" "redes-sociales mapa";
+  }
+}
+
+@media (min-width: 1384px) {
+  footer {
+    background-color: #eeebeb;
+    display: -ms-grid;
+    display: grid;
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 20px;
+        grid-template-areas: "footer-logo metodos-pago redes-sociales mapa";
+  }
 }
 
 .carrusel {
@@ -72,11 +152,12 @@ nav li {
   font-size: 30px;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.863);
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
   margin-left: 7rem;
   margin: top 3rem;
   top: 150px;
-  z-index: 5000;
+  z-index: 1000;
+  width: 25%;
 }
 
 .reservation img {
@@ -89,19 +170,13 @@ nav li {
   margin-top: 1rem;
 }
 
-.reservation .calendar button {
-  border: solid 0.5px;
-  border-radius: 5px;
-  height: 25px;
-  font-size: 17px;
-  border-color: #595a5a;
-  background-color: white;
-  padding: 2px;
+.reservation .calendar select {
+  font-size: 18px;
+  vertical-align: top;
 }
 
-.foto-hotel {
-  height: 450px;
-  width: 1050px;
+.reservation .calendar button {
+  vertical-align: top;
 }
 
 .pileta-container {
@@ -110,23 +185,7 @@ nav li {
   background-size: cover;
   height: 30rem;
   width: 100%;
-}
-
-.pileta-container .pileta-filtro {
-  color: white;
-  background: linear-gradient(42deg, black 0%, rgba(79, 68, 68, 0.580252) 45%);
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.pileta-container .pileta-filtro .img-hotel {
-  height: 7rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 .pileta-container .servicios {
@@ -140,7 +199,7 @@ nav li {
   margin-top: 2rem;
 }
 
-.pileta-container li {
+.pileta-container .servicios-li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,7 +210,7 @@ nav li {
   margin-left: 2rem;
 }
 
-.pileta-container p {
+.pileta-container .servicios-li p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,13 +219,24 @@ nav li {
           justify-content: center;
 }
 
-.pileta-container i {
+.pileta-container .servicios-li i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.pileta-container .pileta-filtro {
+  color: white;
+  background: linear-gradient(42deg, black 0%, rgba(79, 68, 68, 0.580252) 45%);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .pileta-container .circulo {
@@ -188,96 +258,18 @@ nav li {
   transition: background-color 0.5s ease;
 }
 
-.pileta-container .circulo .circulo:hover {
+.pileta-container .circulo:hover {
   background-color: orange;
 }
 
-footer {
-  background-color: #eeebeb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 2rem 5rem 2rem 5rem;
-  font-size: 20px;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-footer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: auto;
-  margin-top: 2rem;
-}
-
-footer div .footer-logo {
+.pileta-container .img-hotel {
   height: 7rem;
-}
-
-footer div .info-hotel {
-  width: 22rem;
-}
-
-footer .metodos-pago {
-  padding-bottom: 4rem;
-}
-
-footer .redes-sociales {
-  padding-bottom: 3.5rem;
-}
-
-footer .redes-sociales ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 0.5rem;
-}
-
-footer .logo-insta {
-  height: 2rem;
-  margin-right: 1rem;
-}
-
-footer .logo-whatsapp {
-  height: 2rem;
-  margin-right: 1rem;
-}
-
-footer .faceboock {
-  height: 2rem;
-  margin-right: 1rem;
-}
-
-footer .fab {
-  font-size: 50px;
-  border-radius: 3rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
 }
 
 .img-entrada img {
   width: 100%;
   padding-top: 4rem;
-}
-
-.form-boostraps {
-  width: 50%;
 }
 /*# sourceMappingURL=sass.css.map */

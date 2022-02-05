@@ -1,0 +1,86 @@
+
+
+footer {
+    background-color: rgb(238, 235, 235);
+    display: grid;
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 20px;
+    grid-template-areas: "footer-logo"
+                         "metodos-pago"
+                        "redes-sociales" 
+                        "mapa";
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        margin-top: 2rem;
+    }
+
+    .footer-logo {
+        height: 7rem;
+
+    }
+
+    .metodos-pago {
+        padding-bottom: 4rem;
+    }
+
+    .redes-sociales {
+        padding-bottom: 3.5rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0.5rem;
+        padding-left: 0;
+    }
+
+    .logo-insta {
+        height: 2rem;
+        margin-right: 1rem;
+    }
+
+    .logo-whatsapp {
+        height: 2rem;
+        margin-right: 1rem;
+    }
+
+    .logo-faceboock {
+        height: 2rem;
+        margin-right: 1rem;
+
+    }
+
+    .info-hotel {
+        width: 22rem;
+    }
+
+    .mapa {
+        height: 10rem;
+        width: 15rem;
+    }
+}
+@media (min-width:768px) {
+    footer {
+        background-color: rgb(238, 235, 235);
+        display: grid;
+        padding: 2rem 5rem 2rem 5rem;
+        font-size: 20px;
+        grid-template-areas: "footer-logo metodos-pago"
+                            "redes-sociales mapa";
+    }
+}
+@media (min-width:1384px) {
+    footer {
+        background-color: rgb(238, 235, 235);
+        display: grid;
+        padding: 2rem 5rem 2rem 5rem;
+        font-size: 20px;
+        grid-template-areas: "footer-logo metodos-pago redes-sociales mapa";
+    }
+}
