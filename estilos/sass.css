@@ -61,6 +61,7 @@ footer footer div {
           justify-content: center;
   width: auto;
   margin-top: 2rem;
+  width: 100%;
 }
 
 footer .footer-logo {
@@ -185,7 +186,7 @@ footer .mapa {
   background-size: cover;
   height: 30rem;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 2px;
 }
 
 .pileta-container .servicios {
@@ -271,5 +272,33 @@ footer .mapa {
 .img-entrada img {
   width: 100%;
   padding-top: 4rem;
+}
+
+.habitaciones img {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: solid 3px;
+  -webkit-animation-duration: 5.5s;
+          animation-duration: 5.5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=sass.css.map */

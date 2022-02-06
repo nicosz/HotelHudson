@@ -9,6 +9,7 @@ footer {
                          "metodos-pago"
                         "redes-sociales" 
                         "mapa";
+                        
 
     footer div {
         display: flex;
@@ -16,6 +17,7 @@ footer {
         justify-content: center;
         width: auto;
         margin-top: 2rem;
+        width: 100%;
     }
 
     .footer-logo {
