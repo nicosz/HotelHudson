@@ -278,8 +278,8 @@ footer .mapa {
   margin-left: 5px;
   margin-right: 5px;
   border: solid 3px;
-  -webkit-animation-duration: 5.5s;
-          animation-duration: 5.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
 }
@@ -300,5 +300,19 @@ footer .mapa {
   75% {
     opacity: 1;
   }
+}
+
+.caja-1 {
+  width: 3em;
+  background-color: black;
+  border: 1px solid #0004ff;
+  color: white;
+}
+
+.caja-2 {
+  width: 6em;
+  background-color: black;
+  border: 1px solid #0004ff;
+  color: white;
 }
 /*# sourceMappingURL=sass.css.map */
