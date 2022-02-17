@@ -1,11 +1,14 @@
-
-.habitaciones img {
+@mixin hola {
     margin-left: 5px;
     margin-right: 5px;
     border: solid 3px;
     animation-duration: 2s;
     animation-name: aparecer;
 }
+.habitaciones img {
+@include hola;
+}
+
 @keyframes aparecer {
     0%{
         opacity: 0;

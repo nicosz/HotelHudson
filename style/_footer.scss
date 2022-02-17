@@ -1,15 +1,13 @@
-
-
 footer {
     background-color: rgb(238, 235, 235);
-    display: grid;
     padding: 2rem 5rem 2rem 5rem;
     font-size: 20px;
     grid-template-areas: "footer-logo"
-                         "metodos-pago"
-                        "redes-sociales" 
-                        "mapa";
-                        
+        "metodos-pago"
+        "redes-sociales"
+        "mapa";
+
+
 
     footer div {
         display: flex;
@@ -27,10 +25,13 @@ footer {
 
     .metodos-pago {
         padding-bottom: 4rem;
+        margin-top: 10px;
+
     }
 
     .redes-sociales {
         padding-bottom: 3.5rem;
+        margin-top: 10px;
     }
 
     ul {
@@ -67,16 +68,37 @@ footer {
         width: 15rem;
     }
 }
+
 @media (min-width:768px) {
     footer {
         background-color: rgb(238, 235, 235);
         display: grid;
         padding: 2rem 5rem 2rem 5rem;
         font-size: 20px;
-        grid-template-areas: "footer-logo metodos-pago"
-                            "redes-sociales mapa";
+        grid-template-areas: "footer-logo"
+            "metodos-pagos"
+            "redes-sociales"
+            "mapa";
+    }
+
+    .footer-logo {
+        grid-area: footer-logo;
+    }
+
+    .metodos-pago {
+        grid-area: metodos-pago;
+    }
+
+    .redes-sociale {
+        grid-area: redes-sociales;
+
+    }
+
+    .mapa {
+        grid-area: mapa;
     }
 }
+
 @media (min-width:1384px) {
     footer {
         background-color: rgb(238, 235, 235);
