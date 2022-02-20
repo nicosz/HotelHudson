@@ -1,0 +1,137 @@
+.carrusel {
+    position: relative;
+}
+
+.reservation {
+    background: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    position: absolute;
+    color: #fff;
+
+    p {
+        font-size: 20px;
+    }
+
+    input {
+        background-color: transparent;
+        color: #fff;
+        border: solid 2px;
+
+        &:focus {
+            color: white;
+            background-color: transparent;
+
+        }
+    }
+
+    button {
+        background: #223d73;
+        border: none;
+    }
+}
+
+.reservation1 {
+    background-color: rgba(17, 17, 17, 0.973);
+    color: #fff;
+
+    p {
+        font-size: 20px;
+    }
+
+    input {
+        background-color: transparent;
+        color: #fff;
+        border: solid 2px;
+
+        &:focus {
+            color: white;
+            background-color: transparent;
+
+        }
+    }
+
+    button {
+        background: #223d73;
+        border: none;
+    }
+
+}
+
+.boton {
+    margin-right: 10rem;
+}
+
+
+.pileta-container {
+    background-image: url(../imagenes/AnyConv.com__pileta.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+    margin-top: 2px;
+
+    .servicios {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        padding-left: 0;
+    }
+
+    .servicios-li {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+
+    }
+
+    .servicios-li p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .servicios-li i {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pileta-filtro {
+        color: white;
+        background: linear-gradient(42deg, rgba(0, 0, 0, 1) 0%, rgba(79, 68, 68, 0.5802521692270659) 45%);
+        height: 100%;
+        display: flex;
+    }
+
+    .circulo {
+        display: inline-block;
+        line-height: 46px;
+        padding-top: 30px;
+        text-transform: uppercase;
+        background: #f4364f;
+        padding: 50px;
+        text-align: center;
+        border: 7px solid #fff;
+        box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.52);
+        margin-top: 1rem;
+        transition: background-color 0.5s ease;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        z-index: 500;
+
+        &:hover {
+            background-color: orange;
+        }
+    }
+
+    .circulo-container {
+        position: relative;
+    }
+
+   
+
+    .img-hotel {
+        height: 7rem;
+        padding-top: 1rem;
+
+    }
+}

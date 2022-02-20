@@ -1,17 +1,19 @@
-/*selector{
-propiedad:valor;
-}*/
 * {
   padding: 0px;
-  margin: 0px;
-  font-family: 'Courgette', cursive;
+  font-family: 'Raleway', arial, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
 }
 
-/* INDEX*/
 body {
   background-color: white;
+}
+
+@media (max-width: 455px) {
+  body {
+    padding-top: 4rem;
+  }
 }
 
 section {
@@ -28,184 +30,18 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 25px;
-  position: absolute;
 }
 
 nav .logo {
   height: 70px;
   margin-top: 10px;
-  margin-left: 3rem;
+  margin-left: 0;
   margin-bottom: 10px;
 }
 
 nav .nav-link {
   color: black;
   text-decoration: none;
-}
-
-.carrusel {
-  position: relative;
-}
-
-.reservation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 30px;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.863);
-  padding: 1rem;
-  margin-left: 7rem;
-  margin: top 3rem;
-  top: 150px;
-  z-index: 5000;
-}
-
-.reservation img {
-  height: 120px;
-  border-bottom: solid 1px;
-  padding-bottom: 1rem;
-}
-
-.reservation p {
-  margin-top: 1rem;
-}
-
-.reservation .calendar select {
-  height: 25px;
-  font-size: 18px;
-}
-
-.reservation .calendar button {
-  border: solid 0.5px;
-  border-radius: 5px;
-  height: 25px;
-  font-size: 17px;
-  border-color: #595a5a;
-  background-color: white;
-  padding: 2px;
-}
-
-.pileta-container {
-  background-image: url(../imagenes/AnyConv.com__pileta.webp);
-  background-attachment: fixed;
-  background-size: cover;
-  height: 30rem;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.pileta-container .servicios {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 2rem;
-}
-
-.pileta-container .servicios-li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 2rem;
-}
-
-.pileta-container .servicios-li p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.pileta-container .servicios-li i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.pileta-container .pileta-filtro {
-  color: white;
-  background: linear-gradient(42deg, black 0%, rgba(79, 68, 68, 0.580252) 45%);
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.pileta-container .circulo {
-  display: inline-block;
-  line-height: 46px;
-  padding-top: 30px;
-  text-transform: uppercase;
-  width: 250px;
-  height: 250px;
-  background: #f4364f;
-  border-radius: 50%;
-  padding: 50px;
-  text-align: center;
-  border: 7px solid #fff;
-  -webkit-box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.52);
-          box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.52);
-  margin-top: 1rem;
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-}
-
-.pileta-container .img-hotel {
-  height: 7rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
-}
-
-.circulo:hover {
-  background-color: orange;
-}
-
-footer {
-  background-color: #eeebeb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 2rem 5rem 2rem 5rem;
-  font-size: 20px;
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-footer footer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: auto;
-  margin-top: 2rem;
 }
 
 footer .footer-logo {
@@ -233,6 +69,7 @@ footer ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 0.5rem;
+  padding-left: 0;
 }
 
 footer .logo-insta {
@@ -259,12 +96,206 @@ footer .mapa {
   width: 15rem;
 }
 
+.carrusel {
+  position: relative;
+}
+
+.reservation {
+  background: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  position: absolute;
+  color: #fff;
+}
+
+.reservation p {
+  font-size: 20px;
+}
+
+.reservation input {
+  background-color: transparent;
+  color: #fff;
+  border: solid 2px;
+}
+
+.reservation input:focus {
+  color: white;
+  background-color: transparent;
+}
+
+.reservation button {
+  background: #223d73;
+  border: none;
+}
+
+.reservation1 {
+  background-color: rgba(17, 17, 17, 0.973);
+  color: #fff;
+}
+
+.reservation1 p {
+  font-size: 20px;
+}
+
+.reservation1 input {
+  background-color: transparent;
+  color: #fff;
+  border: solid 2px;
+}
+
+.reservation1 input:focus {
+  color: white;
+  background-color: transparent;
+}
+
+.reservation1 button {
+  background: #223d73;
+  border: none;
+}
+
+.boton {
+  margin-right: 10rem;
+}
+
+.pileta-container {
+  background-image: url(../imagenes/AnyConv.com__pileta.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 30rem;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.pileta-container .servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2rem;
+  padding-left: 0;
+}
+
+.pileta-container .servicios-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 0;
+}
+
+.pileta-container .servicios-li p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pileta-container .servicios-li i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pileta-container .pileta-filtro {
+  color: white;
+  background: linear-gradient(42deg, black 0%, rgba(79, 68, 68, 0.580252) 45%);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pileta-container .circulo {
+  display: inline-block;
+  line-height: 46px;
+  padding-top: 30px;
+  text-transform: uppercase;
+  background: #f4364f;
+  padding: 50px;
+  text-align: center;
+  border: 7px solid #fff;
+  -webkit-box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.52);
+          box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.52);
+  margin-top: 1rem;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  z-index: 500;
+}
+
+.pileta-container .circulo:hover {
+  background-color: orange;
+}
+
+.pileta-container .circulo-container {
+  position: relative;
+}
+
+.pileta-container .img-hotel {
+  height: 7rem;
+  padding-top: 1rem;
+}
+
 .img-entrada img {
   width: 100%;
   padding-top: 4rem;
 }
 
-.form-boostrap {
-  width: 50%;
+.habitaciones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "habitacion1" "habitacion2" "habitacion3";
+}
+
+.habitaciones div {
+  border: solid 2px black;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.historia-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=sass.css.map */
