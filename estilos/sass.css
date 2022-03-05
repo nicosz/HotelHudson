@@ -264,7 +264,7 @@ footer .mapa {
 }
 
 .habitaciones div {
-  border: solid 2px black;
+  border: solid 3px black;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-name: aparecer;
@@ -289,13 +289,58 @@ footer .mapa {
   }
 }
 
-.historia-hotel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.history-text {
+  padding-top: 6rem;
+}
+
+.page-head {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-bottom: 50px;
+}
+
+.page-head .head-title {
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.page-head .head-title .hl-1 {
+  width: 80px;
+  height: 1px;
+  display: inline-block;
+  background: #f7e3b9;
+}
+
+.page-head .hl-2 {
+  display: inline-block;
+  height: 12px;
+  margin: 0 5px;
+  position: relative;
+  top: 5px;
+  width: 12px;
+  border: 1px solid #e8c57a;
+  border-radius: 50px;
+  background: #ffffff;
+}
+
+.page-head .hl-3 {
+  width: 80px;
+  height: 1px;
+  display: inline-block;
+  background: #f7e3b9;
+}
+
+.card-promo1 {
+  height: 364px;
+}
+
+.card-promo2 {
+  height: 364px;
+}
+
+.card-promo3 {
+  height: 364px;
 }
 /*# sourceMappingURL=sass.css.map */
