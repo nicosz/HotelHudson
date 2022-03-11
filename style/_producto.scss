@@ -1,15 +1,31 @@
 .habitaciones {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    position: relative;
     grid-template-rows: auto;
     grid-template-areas: "habitacion1"
         "habitacion2"
         "habitacion3";
+    text-align: center;
 
-    div {
+    div img {
         border: solid 3px black;
         animation-duration: 1s;
         animation-name: aparecer;
+    }
+}
+
+@media(min-width:768px) {
+    .habitaciones {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-areas: "habitacion1 habitacion2 habitacion3";
+
+        div img {
+            border: solid 3px black;
+            animation-duration: 1s;
+            animation-name: aparecer;
+
+        }
     }
 }
 
