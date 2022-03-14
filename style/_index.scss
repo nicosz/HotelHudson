@@ -24,10 +24,10 @@
         }
     }
 
-    button {
-        background: #223d73;
-        border: none;
+    div .button-index {
+        z-index: 100;
     }
+
 }
 
 .reservation1 {
@@ -50,10 +50,7 @@
         }
     }
 
-    button {
-        background: #223d73;
-        border: none;
-    }
+    
 
 }
 
@@ -127,7 +124,7 @@
         position: relative;
     }
 
-   
+
 
     .img-hotel {
         height: 7rem;

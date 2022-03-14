@@ -116,9 +116,8 @@ footer .mapa {
   background-color: transparent;
 }
 
-.reservation button {
-  background: #223d73;
-  border: none;
+.reservation div .button-index {
+  z-index: 100;
 }
 
 .reservation1 {
@@ -139,11 +138,6 @@ footer .mapa {
 .reservation1 input:focus {
   color: white;
   background-color: transparent;
-}
-
-.reservation1 button {
-  background: #223d73;
-  border: none;
 }
 
 .boton {
